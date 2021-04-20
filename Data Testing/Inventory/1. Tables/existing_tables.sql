@@ -1,0 +1,23 @@
+BEGIN
+PERFORM FROM inventory.code_transaction;
+PERFORM FROM inventory.convertion_material;
+PERFORM FROM inventory.convertion_material_detail;
+PERFORM FROM inventory.convertion_material_stock;
+PERFORM FROM inventory.inventory_adjustment;
+PERFORM FROM inventory.inventory_adjustment_detail;
+PERFORM FROM inventory.inventory_transfer;
+PERFORM FROM inventory.inventory_transfer_detail;
+PERFORM FROM inventory.material_req_non_production;
+PERFORM FROM inventory.material_req_non_production_detail;
+PERFORM FROM inventory.material_return_non_production;
+PERFORM FROM inventory.material_return_non_production_detail;
+PERFORM FROM inventory.material_used_non_production;
+PERFORM FROM inventory.material_used_non_production_detail;
+PERFORM FROM inventory.material_used_non_production_stock;
+PERFORM FROM inventory.material_used_non_sales_temp;
+PERFORM FROM inventory.material_used_type;
+PERFORM FROM inventory.shipping_method;
+PERFORM FROM inventory.stock_ledger_sticker_settings;
+PERFORM FROM inventory.stock_taking;
+PERFORM FROM inventory.stock_taking_detail;
+END;

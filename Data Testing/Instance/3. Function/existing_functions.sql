@@ -1,0 +1,21 @@
+BEGIN
+PERFORM EXISTS (SELECT instances.get_current_instance_id(0));
+PERFORM EXISTS (SELECT instances.get_instance_id_by_centralized(0));
+PERFORM EXISTS (SELECT instances.get_instance_id_by_employees_id(null));
+PERFORM EXISTS (SELECT instances.get_instance_json(null));
+PERFORM EXISTS (SELECT instances.get_instance_name(null));
+PERFORM EXISTS (SELECT instances.get_instance_types_json(null));
+PERFORM EXISTS (SELECT instances.get_parent_instances(null, 0, FALSE));
+PERFORM EXISTS (SELECT instances.get_principal_id(null));
+PERFORM EXISTS (SELECT instances.get_report_company_profile(null));
+PERFORM EXISTS (SELECT instances.get_sub_instances(null, 0, FALSE));
+PERFORM EXISTS (SELECT instances.get_view_instance_json(null));
+PERFORM EXISTS (SELECT instances.get_view_instance_types_json(null));
+PERFORM EXISTS (SELECT instances.list_archive_instances());
+PERFORM EXISTS (SELECT instances.list_archive_instances(null));
+PERFORM EXISTS (SELECT instances.list_of_instance(null));
+PERFORM EXISTS (SELECT instances.validate_inatance_edit_name(null, null));
+PERFORM EXISTS (SELECT instances.validate_instance_name_archive(null));
+PERFORM EXISTS (SELECT instances.validate_instance_new_name(null));
+PERFORM EXISTS (SELECT instances.validate_instance_new_name_archive(null));
+END;

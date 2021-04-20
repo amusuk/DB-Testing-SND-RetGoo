@@ -1,0 +1,22 @@
+BEGIN
+PERFORM FROM finance.cash_payment;
+PERFORM FROM finance.cash_payment_detail;
+PERFORM FROM finance.cash_payment_journal_entries;
+PERFORM FROM finance.cash_receipt;
+PERFORM FROM finance.cash_receipt_detail;
+PERFORM FROM finance.cash_receipt_detail_ar;
+PERFORM FROM finance.cash_transfer;
+PERFORM FROM finance.cost_center;
+PERFORM FROM finance.currency;
+PERFORM FROM finance.expense_realization;
+PERFORM FROM finance.expense_realization_detail;
+PERFORM FROM finance.expense_realization_journal_detail;
+PERFORM FROM finance.operational_adv_payment;
+PERFORM FROM finance.periode;
+PERFORM FROM finance.purchase_advance;
+PERFORM FROM finance.purchase_advance_detail;
+PERFORM FROM finance.taxes;
+PERFORM FROM finance.tax_type;
+PERFORM FROM finance.terms_of_payment;
+PERFORM FROM finance.terms_of_payment_details;
+END;
