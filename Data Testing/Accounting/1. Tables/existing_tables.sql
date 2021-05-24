@@ -28,4 +28,6 @@ PERFORM FROM accounting.products_chart_of_account;
 PERFORM FROM accounting.report_group_detail;
 PERFORM FROM accounting.report_group_first_level_account;
 PERFORM FROM accounting.report_group_summary;
+
+--Test Rico
 END;
